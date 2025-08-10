@@ -221,3 +221,31 @@ color: #131313;
   }
 }
       
+/* features-section related styles */
+#feature-section-title{
+  border-left: 5px solid #FF900E;
+  font-size: 45px;
+  padding-left: 21px;
+}
+.feature-card .feature-title55{
+font-weight: 600;
+font-size: 1.25rem;
+margin-top: 0px;
+margin-bottom: 0px;
+
+}
+.feature-card{
+  padding: 30px;
+  box-shadow: 0 4px 30px 0 rgba(0,0,0,0.06);
+  border-radius: 8px;
+}
+.features{
+  gap: 100px;
+}
+.pic{
+ width: 904px;
+ height: 1049px;
+}
+.feature-title55{
+  color: #131313;
+}
