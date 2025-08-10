@@ -4,7 +4,7 @@
 .work-sans-font{
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400
+  font-weight: 400;
   font-style: normal;
 }
 /* shared styles */
@@ -111,20 +111,84 @@ main>section{
   .para-description{
     color: #727272;
   }
+  /* some facts related styles */
+.para-2{
+  color: #727272;
+  max-width: 540px;
+
+}
+.fact-card{
+  border: 1px solid #FF900E;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+
+  
+}
+.facts-container{
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+}
+.fact-number{
+  font-size: 2.8rem;
+  font-weight:600;
+  margin-top:5px;
+  margin-bottom:10x;
+}
+.fact-name{
+  font-size: 1.25rem;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.feature-33{
+  margin-left: 60px;
+  padding-left: 20px;
+}
+
+
   /* responsive media query */
   
     @media screen and (max-width:576px){
       .navbar,.nav-links,.teams{
         flex-direction: column;
       }
-      .team-img-container{
-        grid-template-columns: repeat(1,1fr);
-      }
+      .team-img-container,
+      .facts-container
+      
+      {
+        grid-template-columns:1fr 
+           }
       .our-features{
         margin-left: 30px;
       }
+      .facts-container{
+        justify-content: center;
+        gap:24px
+      }
 
     }
+
+/* sponsor related styles */
+.sponsor-info{
+  max-width: 540px;
+  margin:50px auto;
+  text-align: center;
+}
+.our-spon{
+font-size:2.8rem ;
+color: #131313;
+}
+.sponsor-companies{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+.sponsor-companies img{
+  filter: grayscale(100%);
+}
+
     /* medium size device */
   
 @media screen and (min-width:576px) and (max-width:992px){
@@ -134,10 +198,26 @@ main>section{
   .our-features{
     margin-left:50px auto;
   }
+  
+ 
 
 }
-/* some facts start */
-.para-2{
-  color: #727272;
-
+/* just sponsor gulor jonno media query */
+@media screen and (max-width: 576px) {
+  .sponsor-companies {
+    display: grid; 
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-items: center; 
+  }
 }
+/* medium  query er jonno */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .sponsor-companies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+  }
+}
+      
