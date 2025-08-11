@@ -111,6 +111,21 @@ main>section{
   .para-description{
     color: #727272;
   }
+  #experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+
+  }
+  #experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .featured-architec{
+    width: 100%;
+  }
   /* some facts related styles */
 .para-2{
   color: #727272;
@@ -152,7 +167,10 @@ main>section{
   /* responsive media query */
   
     @media screen and (max-width:576px){
-      .navbar,.nav-links,.teams{
+      .navbar,
+      .nav-links,
+      .teams,
+      .features{
         flex-direction: column;
       }
       .team-img-container,
@@ -167,6 +185,10 @@ main>section{
       .facts-container{
         justify-content: center;
         gap:24px
+      }
+      #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
       }
 
     }
@@ -248,4 +270,20 @@ margin-bottom: 0px;
 }
 .feature-title55{
   color: #131313;
+}
+
+
+
+/* footer related styles */
+.foot{
+  font-size:20px ;
+  text-align: center;
+  background-color:#FFF4E7;
+  margin-top: 130px;
+  margin-bottom: 216px;
+  margin-right: 240px;
+  margin-left: 240px;
+  height: 100px;
+  padding-top: 50px;
+ 
 }
